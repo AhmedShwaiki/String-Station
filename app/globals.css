@@ -3,27 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: #C81E1E;
+  --secondary-color: #FAC832;
+  --accent-color: #F0F0F0;
+  --foreground-color: #000000;
+  --background-color: var(--accent-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-color: #FFFFFF;
+    --background-color: #000000;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+}
+
+.header, .footer {
+  background-color: var(--primary-color);
+  color: var(--foreground-color);
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: var(--foreground-color);
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: var(--foreground-color);
 }
 
 @layer utilities {
