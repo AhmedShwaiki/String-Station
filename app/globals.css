@@ -3,38 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #C81E1E;
-  --secondary-color: #FAC832;
-  --accent-color: #F0F0F0;
+  --primary-color: #c81e1e;
+  --secondary-color: #fac832;
+  --accent-color: #f0f0f0;
   --foreground-color: #000000;
   --background-color: var(--accent-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-color: #FFFFFF;
-    --background-color: #000000;
-  }
 }
 
 body {
   color: var(--foreground-color);
   background-color: var(--background-color);
-}
-
-.header, .footer {
-  background-color: var(--primary-color);
-  color: var(--foreground-color);
-}
-
-.button-primary {
-  background-color: var(--primary-color);
-  color: var(--foreground-color);
-}
-
-.button-secondary {
-  background-color: var(--secondary-color);
-  color: var(--foreground-color);
 }
 
 @layer utilities {
