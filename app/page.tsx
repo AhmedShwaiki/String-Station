@@ -1,13 +1,17 @@
-import Button from './ui/Button';
+import Footer from '@/app/ui/Footer';
+import Header from '@/app/ui/Header';
+import Navbar from '@/app/ui/Navbar';
+import ProductList from '@/app/ui/ProductList';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <h1 className="text-4xl font-black">String Station</h1>
-        <p>Welcome to String Station!</p>
-        <Button>click me</Button>
-      </div>
-    </main>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <Navbar />
+      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 overflow-y-auto">
+        <ProductList />
+      </main>
+      <Footer />
+    </div>
   );
 }
