@@ -18,6 +18,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <div className="bg-white p-4 rounded-lg shadow-md">
       <Image
         src={product.image}
+        width={300}
+        height={300}
         alt={product.title}
         className="w-full h-40 object-cover mb-4"
       />
