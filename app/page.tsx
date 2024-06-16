@@ -1,7 +1,7 @@
-import Footer from '@/app/ui/Footer';
-import Header from '@/app/ui/Header';
-import Navbar from '@/app/ui/Navbar';
-import ProductList from '@/app/ui/ProductList';
+import Footer from '@/ui/components/Footer';
+import Header from '@/ui/components/Header';
+import Navbar from '@/ui/components/Navbar';
+import ProductList from '@/ui/blocks/ProductList';
 
 export default function Home() {
   return (
